@@ -1,12 +1,14 @@
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
-  var queryInfo = {
-    active: true,
-    currentWindow: true
-  };
+  if (request.msg === 'reddit') {
+    var queryInfo = {
+      active: true,
+      currentWindow: true
+    };
 
-  chrome.tabs.query(queryInfo, function(tabs) {
-    var pUrl = tabs[0].url;
+    chrome.tabs.query(queryInfo, function(tabs) {
+      var pUrl = tabs[0].url;
 
-    chrome.tabs.update({ url: 'popup.html'});
-  });
+      chrome.tabs.update({ url: 'popup.html'});
+    });
+  }
 });
