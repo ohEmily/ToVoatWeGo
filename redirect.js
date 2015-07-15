@@ -3,5 +3,5 @@ document.addEventListener('DOMContentLoaded', function() {
 	function() {
 	  chrome.tabs.update({ url: 'http://voat.co'});
 	},
-  800);	
+  1000);	
 });
