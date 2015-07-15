@@ -1,0 +1,15 @@
+body {
+  font-family: "Helvetica", "Verdana", "Lucida Grande", Tahoma, sans-serif;
+  font-size: 100%;
+  min-width: 150px;
+  text-align: center;
+  overflow: hidden;
+}
+
+#pic {
+  float: center;
+}
+
+#status {
+  overflow: hidden;
+}
