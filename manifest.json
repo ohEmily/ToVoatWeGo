@@ -22,5 +22,7 @@
     "activeTab", 
     "https://ajax.googleapis.com/", 
     "tabs"
-  ]
+  ],
+
+  "homepage_url": "https://github.com/ohEmily/ToVoatWeGo"
 }
